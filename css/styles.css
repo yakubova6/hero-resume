@@ -57,18 +57,24 @@ a {
     display: flex;
     gap: 32px;
     padding: 16px;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .left-panel {
     display: flex;
     flex-direction: column;
-    width: 430px;
+    width: 100%;
+    max-width: 430px;
     min-width: 350px;
     border-radius: 10px;
     gap: 24px;
     padding: 32px;
     background: var(--left-panel-bg);
     color: var(--color-text-aside-primary);
+    flex-shrink: 1;
 }
 
 .visually-hidden {
@@ -98,8 +104,7 @@ a {
     border-radius: 50%;
 }
 
-.name,
-.title {
+.name, .title {
     color: var(--color-text-aside-tertiary);
     font-size: 24px;
 }
@@ -119,11 +124,11 @@ a {
     margin-top: 8px;
 }
 
-.wrapper-sections .left-panel-bg:not(.contacts),
-.contact-item {
+.wrapper-sections .left-panel-bg:not(.contacts), .contact-item {
     background-color: var(--left-panel-bg-section);
-    width: 366px;
     border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .wrapper-sections {
@@ -133,7 +138,7 @@ a {
 }
 
 /* ====Контакты==== */
-.contacts{
+.contacts {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -151,9 +156,7 @@ a {
     height: 24px;
 }
 
-.specialization,
-.languages,
-.social-media {
+.specialization, .languages, .social-media {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -161,7 +164,7 @@ a {
 }
 
 .left-common-header {
-    font-weight: var( --fw-bold);
+    font-weight: var(--fw-bold);
 }
 
 .common-container-list {
@@ -206,17 +209,24 @@ a {
 }
 
 .bold-style {
-    font-weight: var( --fw-bold);
+    font-weight: var(--fw-bold);
 }
 
 .right-panel {
     display: flex;
     flex-direction: column;
     background-color: var(--right-panel-bg);
-    width: 738px;
     gap: 24px;
     border-radius: 10px;
     padding: 32px 14px;
+    width: 100%;
+    max-width: 738px;
+    flex-shrink: 1;
+}
+
+.right-section-wrapper, .experience-item {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* ====Заголовок основной панели==== */
@@ -247,6 +257,7 @@ a {
     line-height: 16px;
 }
 
+/* ====Секции основной панели==== */
 .right-section-wrapper {
     display: flex;
     flex-direction: column;
@@ -278,7 +289,7 @@ a {
     line-height: 16px;
 }
 
-/* ====Навыки==== */
+/* ====Навыки и Хобби==== */
 .level-indicators {
     display: flex;
     flex-wrap: wrap;
@@ -292,18 +303,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    --v: calc(((18/5) * var(--p) - 90)*1deg);
-
-    width:56px;
-    height:56px;
+    --v: calc(((18 / 5) * var(--p) - 90) * 1deg);
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     padding: 4px;
-    background:
-            linear-gradient(#E7E7E7, #E7E7E7) content-box,
-            linear-gradient(var(--v), #FFFFFF 50%, transparent 0) 0/min(100%, (50 - var(--p))*100%),
-            linear-gradient(var(--v), transparent 50%, #3B5999 0) 0/min(100%, (var(--p) - 50)*100%),
-            linear-gradient(to right, #FFFFFF 50%, #3B5999 0);
+    background: linear-gradient(#E7E7E7, #E7E7E7) content-box,
+    linear-gradient(var(--v), #FFFFFF 50%, transparent 0) 0/min(100%, (50 - var(--p)) * 100%),
+    linear-gradient(var(--v), transparent 50%, #3B5999 0) 0/min(100%, (var(--p) - 50) * 100%),
+    linear-gradient(to right, #FFFFFF 50%, #3B5999 0);
 }
 
 .level-indicator {
@@ -321,5 +329,44 @@ a {
     font-size: 12px;
 }
 
+/* ====Медиазапросы==== */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 8px;
+        gap: 16px;
+        min-width: 240px;
+    }
 
+    .left-panel, .right-panel {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow: visible;
+    }
 
+    .origin {
+        font-size: 28px;
+    }
+
+    .right-common-header-title {
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 350px) {
+    body {
+        min-width: 350px;
+        overflow-x: auto;
+    }
+
+    .wrapper {
+        min-width: 350px;
+        transform: none;
+    }
+
+    .left-panel, .right-panel {
+        min-width: 100%;
+        overflow: visible;
+    }
+}
