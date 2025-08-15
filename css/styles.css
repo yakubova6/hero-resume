@@ -342,10 +342,6 @@ a {
         width: 100%;
         max-width: 430px;
     }
-
-    .right-panel {
-        max-width: 430px;
-    }
 }
 
 @media (max-width: 350px) {
