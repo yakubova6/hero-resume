@@ -1,9 +1,11 @@
-# Резюме персонажа (Йеннифер из Ведьмака)
+# Резюме героя
 
 [![GitHub Pages](https://img.shields.io/badge/-Live%20Demo-success?style=flat-square)](https://yakubova6.github.io/hero-resume/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/ru/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/ru/docs/Web/CSS)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)](https://figma.com)
+
+Demo: https://yakubova6.github.io/hero-resume/
 
 Адаптивное резюме-портфолио для персонажа Йеннифер из вселенной "Ведьмака". Учебный проект по фронтенд-разработке.
 
@@ -41,3 +43,4 @@
 1. Клонировать репозиторий:
 ```bash
 git clone https://github.com/yakubova6/hero-resume.git
+
