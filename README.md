@@ -13,7 +13,7 @@ Demo: https://yakubova6.github.io/hero-resume/
 
 ## Особенности проекта
 
-- **Верстка** по макету Figma с точным соблюдением отступов
+- **Pixel-perfect верстка** по макету Figma с точным соблюдением отступов
 - Полностью **адаптивный дизайн** (от 350px до 1300px+)
 - Современный **CSS с Flexbox**
 - Семантическая HTML-разметка
@@ -43,4 +43,5 @@ Demo: https://yakubova6.github.io/hero-resume/
 1. Клонировать репозиторий:
 ```bash
 git clone https://github.com/yakubova6/hero-resume.git
+
 
