@@ -1,47 +1,50 @@
-# Резюме героя
+# Hero Resume
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff)](#)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff)](#)
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=fff)](#)
 
-[![GitHub Pages](https://img.shields.io/badge/-Live%20Demo-success?style=flat-square)](https://yakubova6.github.io/hero-resume/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/ru/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/ru/docs/Web/CSS)
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)](https://figma.com)
+**Live Demo:** [https://yakubova6.github.io/hero-resume/](https://yakubova6.github.io/hero-resume/)
 
-Demo: https://yakubova6.github.io/hero-resume/
+---
 
-Адаптивное резюме-портфолио для персонажа Йеннифер из вселенной "Ведьмака". Учебный проект по фронтенд-разработке.
+## About the Project
+A fully responsive **portfolio/resume** for the character **Yennefer** from the "Witcher" universe.  
+This is a **frontend learning project** focused on adaptive layout, semantic HTML, and modern CSS techniques.
 
 ![](/assets/images/github/resume.jpg)
+---
 
-## Особенности проекта
+## Project Features
+- **Pixel-perfect layout** based on the Figma design with precise spacing
+- **Fully responsive design** (from 350px to 1300px+)
+- Modern **CSS with Flexbox**
+- **Semantic HTML** markup
+- **Optimized code structure** using CSS custom properties
+- **Interactive elements**
+- Accessibility considerations
 
-- **Pixel-perfect верстка** по макету Figma с точным соблюдением отступов
-- Полностью **адаптивный дизайн** (от 350px до 1300px+)
-- Современный **CSS с Flexbox**
-- Семантическая HTML-разметка
-- Оптимизированная структура кода с CSS-переменными
-- Интерактивные элементы 
-- Доступность 
+---
 
-## Технологии
-
-- **HTML5** (семантическая верстка)
+## Technologies Used
+- **HTML5** (semantic markup)
 - **CSS3** (Flexbox, Custom Properties, Media Queries)
-- **Figma** (работа с макетом)
-- **Git** (контроль версий)
-- **GitHub Pages** (деплой)
+- **Figma** (working with design mockups)
+- **Git** (version control)
+- **GitHub Pages** (deployment)
 
-## Цели проекта
+---
 
-Этот проект был создан для:
-- Практики адаптивной верстки
-- Отработки работы с макетами Figma
-- Изучения принципов семантической разметки
-- Освоения современных CSS-методик
-- Создания первого полноценного проекта для портфолио
+## Project Goals
+This project was created to:  
+- Practice **responsive web design**
+- Work with **Figma mockups**
+- Learn **semantic HTML**
+- Master **modern CSS techniques**
+- Build the **first complete project** for a portfolio
 
-## Как использовать
+---
 
-1. Клонировать репозиторий:
+## How to Use
+Clone the repository:  
 ```bash
 git clone https://github.com/yakubova6/hero-resume.git
-
-
